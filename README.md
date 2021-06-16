@@ -2,18 +2,6 @@
 
 10,000-ft Overview of SEQC
 
-# IDE
-
-- Visual Studio Code
-- PyCharm
-
-# Debug
-
-- Local (can't do with a big dataset)
-- Remote
-  - HPC
-  - AWS
-
 # Code
 
 ## Main Function
@@ -40,10 +28,9 @@ Platform-specific code
 
 ## Determine Starting Point
 
-https://github.com/dpeerlab/seqc/blob/3d0bec02b308bf47257c01712b3eeebbf856cd82/src/seqc/core/run.py#L329
-
-- From FASTQ
-- From aligned BAM
+- From FASTQ (.fastq)
+- From aligned BAM (.bam)
+- From read array object (.h5)
 
 ## Download
 
@@ -84,7 +71,25 @@ https://github.com/dpeerlab/seqc/blob/3d0bec02b308bf47257c01712b3eeebbf856cd82/s
 
 - csv
 
+# IDE
+
+- Visual Studio Code
+- PyCharm
+
+# Debug
+
+- Local (can't do with a big dataset)
+- Remote
+  - HPC
+  - AWS
+
+# Setting Up Dev Envionrment
+
+https://github.com/dpeerlab/seqc/blob/master/docs/install-dev.md
+
 # Testing
+
+https://github.com/dpeerlab/seqc/blob/master/docs/run-test.md
 
 - nosetest
 - CicleCI
