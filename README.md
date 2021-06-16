@@ -4,7 +4,7 @@
 
 # IDE
 
-- VSCode
+- Visual Studio Code
 - PyCharm
 
 # Debug
@@ -16,51 +16,73 @@
 
 # Code
 
-## run.py
+## Main Function
 
-### Entry Point
+`run.py`
 
-### Program Arguments
+```python
+def run(args) -> None:
+  ...
+```
 
-`args
+## Program Arguments
 
-### Platform
+`args`
+
+## Platform
+
+Platform-specific code
 
 - 10x v2
 - 10x v3
 - InDrop
 - ...
 
-platform-specific code gets loaded here.
-
-### Determine Starting Point
+## Determine Starting Point
 
 https://github.com/dpeerlab/seqc/blob/3d0bec02b308bf47257c01712b3eeebbf856cd82/src/seqc/core/run.py#L329
 
 - From FASTQ
-- From Aligned BAM
+- From aligned BAM
 
-### Download
+## Download
 
-### Merge FASTQ
+- Inputs
 
-### Alignment
+## Merge FASTQ
 
-### Creating Read Array
+- READ1 + READ2
 
-### Cell Barcode Correction
+## Alignment
 
-### Resolve Ambiguous Alignments
+- Internally using STAR
 
-### UMI Correction
+## Creating Read Array
 
-### Creating Count Matrix
+- H5 object
+- [Explore read array object](./h5/read-h5.ipynb)
 
-### Sparse Count Matrix
+## Cell Barcode Correction
 
-### Dense Count Matrix
+## Resolve Ambiguous Alignments
 
-### Filtering
+- Multimapping
+
+## UMI Correction
+
+- Dask
+
+## Sparse Count Matrix
+
+- mtx and csv
+
+## Filtering
+
+- Four filters
+
+## Dense Count Matrix
+
+- csv
 
 # Testing
 
@@ -69,3 +91,7 @@ https://github.com/dpeerlab/seqc/blob/3d0bec02b308bf47257c01712b3eeebbf856cd82/s
 - GitHub Actions
 
 # Packaging
+
+- Docker
+- Packer
+- WDL
