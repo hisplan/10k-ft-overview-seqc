@@ -1,0 +1,76 @@
+INFO:root:2020-10-01 21:35:03:SEQC=v0.2.6
+INFO:root:2020-10-01 21:35:03:STAR=v2.5.3a
+INFO:root:2020-10-01 21:35:03:samtools=v1.3.1
+INFO:root:2020-10-01 21:35:03:mutt was not found on this machine; an email will not be sent to the user upon termination of SEQC run.
+INFO:root:2020-10-01 21:35:03:Full length transcripts are used for read mapping in 10x data.
+INFO:root:2020-10-01 21:35:03:max_insert_size is set to 10000
+INFO:root:2020-10-01 21:35:03:Passed command line arguments: {
+    "alignment_file": "",
+    "ami_id": null,
+    "barcode_fastq": [
+        "datasets/ten_x_v3/barcode/"
+    ],
+    "barcode_files": [
+        "datasets/barcodes/ten_x_v3/flat/"
+    ],
+    "basespace": null,
+    "basespace_token": null,
+    "debug": true,
+    "email": "jaeyoung.chun@gmail.com",
+    "filter_low_coverage": false,
+    "filter_low_gene_abundance": true,
+    "filter_mitochondrial_rna": true,
+    "filter_mode": "scRNA-seq",
+    "genomic_fastq": [
+        "datasets/ten_x_v3/genomic/"
+    ],
+    "index": "datasets/genomes/hg38_chr19/",
+    "instance_type": "r5.2xlarge",
+    "log_name": "seqc_log.txt",
+    "low_coverage_alpha": 0.25,
+    "max_insert_size": 1000,
+    "merged_fastq": "",
+    "min_poly_t": null,
+    "output_prefix": "_outs/ten_x_v3/test",
+    "platform": "ten_x_v3",
+    "read_array": "",
+    "remote": false,
+    "remote_update": false,
+    "rsa_key": null,
+    "singleton_weight": 1.0,
+    "spot_bid": null,
+    "star_args": [
+        "\"runRNGseed=0\""
+    ],
+    "subparser_name": "run",
+    "terminate": true,
+    "upload_prefix": null,
+    "user_tags": null,
+    "volume_size": null
+}
+INFO:root:2020-10-01 21:35:03:Estimated min_poly_t=0
+INFO:root:2020-10-01 21:35:03:Merging genomic reads and barcode annotations.
+INFO:root:2020-10-01 21:35:54:Aligning merged fastq records.
+INFO:root:2020-10-01 21:38:46:Gzipping merged fastq file.
+INFO:root:2020-10-01 21:39:29:Filtering aligned records and constructing record database.
+INFO:root:2020-10-01 21:39:53:Correcting barcodes and estimating error rates.
+INFO:root:2020-10-01 21:40:24:Resolving ambiguous alignments.
+INFO:root:2020-10-01 21:40:40:Identifying RMT errors.
+DEBUG:root:2020-10-01 21:40:40 [rmt_correction] Available CPU / RAM: 12 / 14 GB
+DEBUG:root:2020-10-01 21:40:40 [rmt_correction] Estimated optimum n_workers: 7
+DEBUG:root:2020-10-01 21:40:46 [rmt_correction] Dask processes=7 threads=7
+DEBUG:root:2020-10-01 21:40:46 [rmt_correction] Dask worker_kwargs n_workers=7 threads_per_worker=1 processes=True memory_limit=64G memory_target_fraction=0.95 memory_spill_fraction=0.99 memory_pause_fraction=False
+DEBUG:root:2020-10-01 21:40:46 [rmt_correction] Dask Dashboard=http://127.0.0.1:8787/status
+DEBUG:root:2020-10-01 21:40:46 [rmt_correction] Grouping...
+DEBUG:root:2020-10-01 21:40:46 [rmt_correction] Submitting jobs to Dask...
+DEBUG:root:2020-10-01 21:40:46 [rmt_correction] Waiting untill all tasks complete...
+DEBUG:root:2020-10-01 21:40:59 [rmt_correction] Collecting the task results from the workers...
+INFO:root:2020-10-01 21:41:02:Saving read array.
+INFO:root:2020-10-01 21:41:02:Saving correction informatoin.
+INFO:root:2020-10-01 21:41:03:Creating counts matrix.
+INFO:root:2020-10-01 21:41:07:Saving sparse matrices
+INFO:root:2020-10-01 21:41:08:Creating filtered counts matrix.
+INFO:root:2020-10-01 21:41:08:Inadequate number of cells or MT gene abundance to plot MT filter, no visual will be produced, but filter has been applied.
+INFO:root:2020-10-01 21:41:28:SEQC run complete. Cluster will be terminated
+INFO:root:2020-10-01 21:41:28:Running Time=6 minutes 25 seconds
+INFO:root:2020-10-01 21:41:28:Execution completed successfully, instance will be terminated.
