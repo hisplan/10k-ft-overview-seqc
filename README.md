@@ -71,23 +71,20 @@ Platform-specific code
 
 - csv
 
-# IDE
-
-- Visual Studio Code
-- PyCharm
-
-# Debug
+# Development/Debug Environment
 
 - Local (can't do with a big dataset)
+  - Visual Studio Code
+  - PyCharm
 - Remote
-  - HPC
-  - AWS
+  - HPC (e.g. pdb)
+  - AWS (e.g. [Cloud9](https://aws.amazon.com/cloud9/), [VS Code in the browser](https://github.com/cdr/code-server))
 
 # Setting Up Dev Envionrment
 
 https://github.com/dpeerlab/seqc/blob/master/docs/install-dev.md
 
-# Testing
+# Testing & CI/CD
 
 https://github.com/dpeerlab/seqc/blob/master/docs/run-test.md
 
