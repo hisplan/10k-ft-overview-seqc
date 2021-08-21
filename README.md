@@ -2,9 +2,9 @@
 
 10,000-ft Overview of SEQC
 
-# Code
+## Code Overview
 
-## Main Function
+### Main Function
 
 `run.py`
 
@@ -13,11 +13,11 @@ def run(args) -> None:
   ...
 ```
 
-## Program Arguments
+### Program Arguments
 
 `args`
 
-## Platform
+### Platform
 
 Platform-specific code
 
@@ -26,52 +26,53 @@ Platform-specific code
 - InDrop
 - ...
 
-## Determine Starting Point
+### Determine Starting Point
 
 - From FASTQ (.fastq)
 - From aligned BAM (.bam)
-- From read array object (.h5)
+- From ReadArray object (.h5)
 
-## Download
+### Download
 
 - Inputs
 
-## Merge FASTQ
+### Merge FASTQ
 
 - READ1 + READ2
 
-## Alignment
+### Alignment
 
 - Internally using STAR
 
-## Creating Read Array
+### Creating ReadArray Object
 
 - H5 object
-- [Explore read array object](./h5/read-h5.ipynb)
+- [Explore the ReadArray object](./h5/explore-h5.ipynb)
+  - `pysam` and `pyranges` are not required for exploring ReadArray object, but required for BAM/GTF lookup.
 
-## Cell Barcode Correction
+### Cell Barcode Correction
 
-## Resolve Ambiguous Alignments
+### Resolve Ambiguous Alignments
 
 - Multimapping
 
-## UMI Correction
+### UMI Correction
 
 - Dask
 
-## Sparse Count Matrix
+### Sparse Count Matrix
 
 - mtx and csv
 
-## Filtering
+### Filtering
 
 - Four filters
 
-## Dense Count Matrix
+### Dense Count Matrix
 
 - csv
 
-# Development/Debug Environment
+## Development/Debug Environment
 
 - Local (can't do with a big dataset)
   - Visual Studio Code
@@ -80,11 +81,11 @@ Platform-specific code
   - HPC (e.g. pdb)
   - AWS (e.g. [Cloud9](https://aws.amazon.com/cloud9/), [VS Code in the browser](https://github.com/cdr/code-server))
 
-# Setting Up Dev Envionrment
+## Setting Up Dev Envionrment
 
 https://github.com/dpeerlab/seqc/blob/master/docs/install-dev.md
 
-# Testing & CI/CD
+## Testing & CI/CD
 
 https://github.com/dpeerlab/seqc/blob/master/docs/run-test.md
 
@@ -92,7 +93,7 @@ https://github.com/dpeerlab/seqc/blob/master/docs/run-test.md
 - CicleCI
 - GitHub Actions
 
-# Packaging
+## Packaging
 
 - Docker
 - Packer
